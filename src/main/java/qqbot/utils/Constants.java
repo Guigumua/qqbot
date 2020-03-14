@@ -14,7 +14,7 @@ public class Constants {
 	public static final String BIZHI_API = "http://api.btstu.cn/sjbz/api.php";
 	public static final String SEARCH_API = "https://saucenao.com/search.php";
 	public static final String SETU_API = "https://api.lolicon.app/setu/";
-	public static final String API_KEY = "5e670c1065c5e472933258";
+	public static final String API_KEY = "apikey";
 	public static final String ANIME_SEARCH_API = "https://trace.moe/search/";
 
 	/* 一些参数 */

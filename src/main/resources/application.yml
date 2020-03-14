@@ -1,0 +1,50 @@
+# 数据库配置
+spring:
+  datasource:
+    hikari:
+      read-only: false
+      connection-timeout: 60000
+      idle-timeout: 60000
+      validation-timeout: 3000
+      max-lifetime: 180000
+      login-timeout: 5
+      maximum-pool-size: 10
+      minimum-dile: 10
+    url: jdbc:mysql://139.9.197.197:3306/qqbot?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+
+core:
+  localQQCode: 675348605 # 机器人qq账号
+  port: 80 # java端端口
+  cqPath: D:/software/CoolQ
+
+# 以下为无用配置 将来的版本可能启用
+simple-robot:
+  robot:
+    command-prefix: /
+    setu:
+      setu-cold-time: 30
+      on-switch: "setu on"
+      off-switch: "setu off"
+      enabled: false
+      whiteListGroup:
+        - 178961623
+        - 178976678
+      whiteListUser:
+        - 11748787
+        - 789776897
+      r18:
+        group-enabled: false
+        group-white-list-only: false
+        private-white-list-only: false
+        group-recall-time: 30
+        private-recall-time: 30

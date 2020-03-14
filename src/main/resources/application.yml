@@ -10,7 +10,7 @@ spring:
       login-timeout: 5
       maximum-pool-size: 10
       minimum-dile: 10
-    url: jdbc:mysql://ip:port/qqbot?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://ip:port/qqbot?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8 # 修改url为你的mysql url
     username: username
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver

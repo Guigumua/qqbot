@@ -10,9 +10,9 @@ spring:
       login-timeout: 5
       maximum-pool-size: 10
       minimum-dile: 10
-    url: jdbc:mysql://139.9.197.197:3306/qqbot?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
-    username: root
-    password: root
+    url: jdbc:mysql://ip:port/qqbot?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: username
+    password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -23,9 +23,8 @@ spring:
     show-sql: true
 
 core:
-  localQQCode: 675348605 # 机器人qq账号
+  localQQCode: 12345678 # 机器人qq账号
   port: 80 # java端端口
-  cqPath: D:/software/CoolQ
 
 # 以下为无用配置 将来的版本可能启用
 simple-robot:
